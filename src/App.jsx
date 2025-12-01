@@ -18,7 +18,7 @@ function App() {
     setAiResult(null);
 
     try {
-      const res = await axios.post("https://vercerl-backend.vercel.app/upload-resume", formData, {
+      const res = await axios.post("https://vercerl-backend.vercel.app/api/upload-resume", formData, {
         headers: { "Content-Type": "multipart/form-data" },
       });
 
